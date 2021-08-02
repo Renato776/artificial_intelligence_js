@@ -8,8 +8,8 @@ function reflex_agent(location, state){
 }
 
 function test(states){
-      	var location = states[0];		
-      	var state = states[0] == "A" ? states[1] : states[2];
+      	let location = states[0];		
+      	let state = location == "A" ? states[1] : states[2];
       	var action_result = reflex_agent(location, state);
       	document.getElementById("log").innerHTML+="<br>Location: ".concat(location).concat(" | Action: ").concat(action_result);
       	if (action_result == "CLEAN"){
